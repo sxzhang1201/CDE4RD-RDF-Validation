@@ -1,0 +1,31 @@
+PREFIX : <http://purl.org/biosemantics-lumc/shex/ern-common-data-elements/>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX sio: <http://semanticscience.org/resource/>
+PREFIX ncit: <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX snomedct: <http://purl.bioontology.org/ontology/SNOMEDCT/>
+PREFIX hl7: <http://purl.bioontology.org/ontology/HL7/>
+
+# Instance Bob
+:bob
+  a obo:NCBITaxon_9606;
+  sio:SIO_000008 :bob_status.
+
+:bob_status
+  a ncit:C25688;
+  sio:SIO_000300 obo:PATO_0001421.
+
+
+# Instance Linda
+:linda
+  a obo:NCBITaxon_9606;
+  sio:SIO_000008 :linda_status.
+
+:linda_status
+  a ncit:C25688;
+  sio:SIO_000300 obo:PATO_0001422;
+  sio:SIO_000008 :linda_death_date.
+
+:linda_death_date
+  a ncit:C70810;
+  sio:SIO_000300 "1993-01-01T01:12:50"^^xsd:dateTime.
