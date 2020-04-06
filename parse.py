@@ -2,8 +2,15 @@ import os.path
 from rdflib.graph import Graph
 
 
-def parse_rdf_raph(file_name, graph_format):
+def parse_rdf_graph(file_name, graph_format):
+    """
+    This function imports a file that should contain RDF graphs, parse them, and return parsed RDF graphs.
 
+    :param file_name: String, describing the path of the imported file
+    :param graph_format: String,used if format can not be determined from source. Defaults to rdf/xml.
+    Format support can be extended with plugins, but 'xml', 'n3', 'nt', 'trix', 'rdfa' are built in.
+    :return: An rdflib.graph object
+    """
 
     # Initiate an empty graph
     g = Graph()
