@@ -54,9 +54,3 @@ def construct_sparql(sparql_service, query_string):
     sparql_results = sparql.query().convert()
 
     return sparql_results
-
-
-
-
-
-

@@ -27,15 +27,3 @@ def parse_rdf_graph(file_name, graph_format):
     print("  Finish Syntactical Validation: RDF graphs are successfully parsed and returned.")
 
     return g
-
-
-
-
-
-
-
-
-
-
-
-

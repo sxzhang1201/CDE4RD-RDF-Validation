@@ -31,7 +31,3 @@ def run_triple_resolvability_validation(triple):
     print("  These IRIs are not resolvable: ", triple_unresolvable_list)
 
     return triple_unresolvable_list
-
-
-
-

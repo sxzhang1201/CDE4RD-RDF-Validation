@@ -52,5 +52,3 @@ def run_triple_coherence_validation(triple):
                 pass
 
     return incoherent_triple_list
-
-

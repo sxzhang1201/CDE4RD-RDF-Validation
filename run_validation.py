@@ -19,3 +19,4 @@ for triple in g:
 
 print("In summary: \n  Unresolvable IRIs are: ", list(set(unresolvable_list)),
       "\n  Triples using incohenrent properties are: ", incoherent_property_list)
+
