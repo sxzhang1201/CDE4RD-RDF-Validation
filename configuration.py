@@ -8,12 +8,10 @@ In this file, key parameters are specified, including:
 
 # The RDF graphs to be validated
 # file = "personInformation.ttl"
-file = "patientStatusInstance.ttl"
+file = "test-data/patientStatusInstance.ttl"
 
 # The representation format of the file
 graph_format = 'turtle'
 
 # The Ontobee SPARQL endpoint
 sparql_service = "http://sparql.hegroup.org/sparql/"
-
-
